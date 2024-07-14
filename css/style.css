@@ -486,45 +486,57 @@ a:focus {
 }
 
 /*skillsectionnew*/
+
+
 .skills-section {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1000px; /* Adjust as needed to fit within the container */
+    margin: 0 auto; /* Center align the grid within the container */
 }
 
-.skill-category {
-    flex: 1;
-    min-width: 200px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    transition: transform 0.3s, background-color 0.3s;
+.skill-card {
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.skill-category h3 {
-    margin-top: 0;
+.skill-card i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    transition: color 0.3s;
 }
 
-.skill-category ul {
-    list-style-type: none;
-    padding: 0;
+.skill-card p {
+    font-size: 1.2em;
+    margin: 0;
 }
 
-.skill-category li {
-    margin: 5px 0;
-    padding: 5px;
-    transition: color 0.3s, background-color 0.3s;
+.skill-card:hover {
+    transform: scale(1.1);
+    background-color: #090909;
+    color: #f8f1f1;
 }
 
-.skill-category:hover {
-    transform: scale(1.05);
-    background-color: #f0f0f0;
+.skill-card:hover i {
+    color: #000;
 }
 
-.skill-category li:hover {
-    background-color: #e0e0e0;
-    color: #333;
+/* FontAwesome icon colors */
+.skill-card i.fas,
+.skill-card i.fab {
+    color: #ff5005; /* Customize this color */
 }
+
 
 
 
