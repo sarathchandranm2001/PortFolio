@@ -525,6 +525,7 @@ a:focus {
     transform: scale(1.1);
     background-color: #090909;
     color: #f8f1f1;
+    
 }
 
 .skill-card:hover i {
@@ -534,7 +535,12 @@ a:focus {
 /* FontAwesome icon colors */
 .skill-card i.fas,
 .skill-card i.fab {
-    color: #ff5005; /* Customize this color */
+    color: #ff6d05; /* Customize this color */
+}
+
+.skill-card i.fas:hover,
+.skill-card i.fab:hover {
+    color: #05a8ff; /* Customize this color */
 }
 
 
