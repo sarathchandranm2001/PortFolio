@@ -558,7 +558,59 @@ a:focus {
 .skill-card i.fab:hover {
     color: #05a8ff; /* Customize this color */
 }
+@media (max-width: 1200px) {
+    .skills-section {
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        gap: 15px;
+    }
+}
 
+@media (max-width: 992px) {
+    .skills-section {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-section {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .skill-card {
+        padding: 15px;
+    }
+
+    .skill-card i {
+        font-size: 1.5em;
+    }
+
+    .skill-card p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 576px) {
+    .skills-section {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .skill-card {
+        padding: 10px;
+    }
+
+    .skill-card i {
+        font-size: 1.2em;
+    }
+
+    .skill-card p {
+        font-size: 0.9em;
+    }
+}
 
 
 
