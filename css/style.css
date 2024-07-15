@@ -507,7 +507,7 @@ a:focus {
 .skills-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 54px;
+    gap: 30px;
     justify-content: center;
     padding: 20px;
     max-width: 1000px; /* Adjust as needed to fit within the container */
@@ -524,6 +524,8 @@ a:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    height: 150px; /* Ensure consistent height */
 }
 
 .skill-card i {
@@ -543,9 +545,13 @@ a:focus {
     color: #f8f1f1;
 }
 
-.skill-card:hover i {
-    color: #000;
+.skill-card:hover i.fas,
+.skill-card:hover i.fab {
+    color: #05a8ff; /* Customize this color */
 }
+
+
+
 
 /* FontAwesome icon colors */
 .skill-card i.fas,
@@ -553,10 +559,7 @@ a:focus {
     color: #ff6d05; /* Customize this color */
 }
 
-.skill-card i.fas:hover,
-.skill-card i.fab:hover {
-    color: #05a8ff; /* Customize this color */
-}
+
 
 @media (max-width: 1200px) {
     .skills-section {
@@ -575,7 +578,7 @@ a:focus {
 @media (max-width: 768px) {
     .skills-section {
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        gap: 30px;
+        gap: 10px;
         padding: 15px;
     }
 
@@ -611,6 +614,7 @@ a:focus {
         font-size: 0.9em;
     }
 }
+
 
 
 
