@@ -507,7 +507,7 @@ a:focus {
 .skills-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
+    gap: 54px;
     justify-content: center;
     padding: 20px;
     max-width: 1000px; /* Adjust as needed to fit within the container */
@@ -541,7 +541,6 @@ a:focus {
     transform: scale(1.1);
     background-color: #090909;
     color: #f8f1f1;
-    
 }
 
 .skill-card:hover i {
@@ -558,6 +557,7 @@ a:focus {
 .skill-card i.fab:hover {
     color: #05a8ff; /* Customize this color */
 }
+
 @media (max-width: 1200px) {
     .skills-section {
         grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
@@ -575,7 +575,7 @@ a:focus {
 @media (max-width: 768px) {
     .skills-section {
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        gap: 10px;
+        gap: 30px;
         padding: 15px;
     }
 
