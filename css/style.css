@@ -15,7 +15,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-    color: #c01909;
+    color: #f8cece;
     outline: none;
     text-decoration: none;
 }
@@ -29,7 +29,7 @@ a:focus {
     padding: 10px 20px;
     text-decoration: none;
     color: #fff;
-    background-color: #0793ab; /* LinkedIn color */
+    background-color: #024cf7; /* LinkedIn color */
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
